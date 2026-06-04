@@ -5,3 +5,9 @@ select city,length(city) from station
 order by length(city) asc, city limit 1;
 select city,length(city) from station
 order by length(city) desc, city limit 1;
+
+-- LENGTH(CITY) → finds number of characters.
+-- First query → shortest city name.
+-- Second query → longest city name.
+-- CITY ASC handles alphabetical tie-breaking.
+-- FETCH FIRST 1 ROW ONLY selects only one row in DB2-compatible SQL.
